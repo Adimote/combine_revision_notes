@@ -1,7 +1,7 @@
 Requirements:
 
 - Pandoc
-- Libreoffice (at least `unoconv`)
+- Libreoffice
+- unoconv
 - Python (2 or 3)
-- Bash
 - Stapler
