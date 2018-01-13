@@ -1,3 +1,4 @@
+#!/bin/bash
 # Get the directory of this script so it can be run from anywhere
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 
