@@ -8,8 +8,8 @@ echo "Converting all pptx to pdf (this may take some time)"
 for f in *.{pptx,ppt}; do
     BASE_FILENAME=${f%%.*} # Just get the name of the file, no extension
     if [ ! -f "$BASE_FILENAME.pdf" ]; then
-        echo " + Converting $f..."
-        unoconv -f pdf $f
+        echo " + Converting '$f'..."
+        unoconv -f pdf "$f"
     fi
 done
 
