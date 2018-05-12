@@ -17,7 +17,7 @@ shopt -u nullglob # Undo that option
 echo "Adding title pages to all pdfs"
 for f in *.pdf
 do
-        echo "\\begin{{document}}\\title{{`sed 's/_/\\_/g' <<< \"$f\"`}}\\end{{document}}" | pandoc --from latex -o "${f}__titlepage.pdf";
+        echo "\\begin{{document}}\\title{{`sed 's/_/\\\\_/g' <<< \"$f\"`}}\\end{{document}}" | pandoc --from latex -o "${f}__titlepage.pdf";
         stapler sel "${f}__titlepage.pdf" "$f" "${f}__withtitlepage.pdf";
 done
 
